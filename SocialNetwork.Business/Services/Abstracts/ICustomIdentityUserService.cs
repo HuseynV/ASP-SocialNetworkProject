@@ -1,12 +1,12 @@
 ﻿using SocialNetwork.Entities.Entities;
 
-namespace SocialNetwork.DataAccess.Repositories.Abstracts;
+namespace SocialNetwork.Business.Services.Abstracts;
 
-public interface ICustomIdentityUserRepository
+public interface ICustomIdentityUserService
 {
     Task<List<CustomIdentityUser>> GetAllAsync();
     Task<CustomIdentityUser> GetByIdAsync(string id);
     Task AddAsync(CustomIdentityUser user);
-    Task DeleteAsync(CustomIdentityUser user);
     Task UpdateAsync(CustomIdentityUser user);
+    Task DeleteAsync(CustomIdentityUser user);
 }
