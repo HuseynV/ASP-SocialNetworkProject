@@ -2,7 +2,7 @@
 
 namespace SocialNetwork.Business.Services.Abstracts;
 
-public interface IPostRepository
+public interface IPostService
 {
     Task<List<Post>> GetAllAsync();
     Task<Post> GetByIdAsync(int id);

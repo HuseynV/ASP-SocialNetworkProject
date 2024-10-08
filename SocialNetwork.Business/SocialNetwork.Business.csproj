@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Concretes\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SocialNetwork.DataAccess\SocialNetwork.DataAccess.csproj" />
     <ProjectReference Include="..\SocialNetwork.Entities\SocialNetwork.Entities.csproj" />
   </ItemGroup>
