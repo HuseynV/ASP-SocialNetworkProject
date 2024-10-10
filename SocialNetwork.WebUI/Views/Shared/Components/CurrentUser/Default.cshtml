@@ -1,0 +1,23 @@
+﻿@model CurrentUserViewModel
+
+<a href="#" class="dropdown-bs-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="menu-profile">
+        
+        <img src="/images/@Model.User.Image" class="rounded-circle" alt="image" />
+        <span class="name">@Model.User.UserName</span>
+        <span class="status-online"></span>
+    </div>
+</a>
+<div class="dropdown-menu">
+    <div class="profile-header">
+        <h3>@Model.User.UserName</h3>
+        <a>@Model.User.Email </a>
+    </div>
+    <ul class="profile-body">
+        <li><i class="flaticon-user"></i> <a href="/Profile/Index">My Profile</a></li>
+        <li><i class="flaticon-settings"></i> <a href="/Setting/Index">Setting</a></li>
+        <li><i class="flaticon-privacy"></i> <a href="privacy.html">Privacy</a></li>
+        <li><i class="flaticon-information"></i> <a href="help-and-support.html">Help & Support</a></li>
+        <li><i class="flaticon-logout"></i> <a href="/Account/LogOut">Logout</a></li>
+    </ul>
+</div>

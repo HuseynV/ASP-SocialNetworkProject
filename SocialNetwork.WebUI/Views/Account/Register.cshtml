@@ -1,0 +1,121 @@
+﻿@model RegisterViewModel
+
+@{
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="zxx">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links of CSS files -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SocialNetwork.WebUI.styles.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/css/bootsrap.min.css" />
+    <link rel="stylesheet" href="~/css/animate.min.css">
+    <link rel="stylesheet" href="~/css/remixicon.css">
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="~/css/simplebar.min.css">
+    <link rel="stylesheet" href="~/css/metismenu.min.css">
+    <link rel="stylesheet" href="~/css/carousel.min.css">
+    <link rel="stylesheet" href="~/css/default.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+    <title>Zust - Social Community & Marketplace HTML Template</title>
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="profile-authentication-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="profile-authentication-image">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <div class="content-image">
+                                    <div class="logo">
+                                        <a href="/Home/Index"><img src="/images/logo.png" alt="Zust"></a>
+                                    </div>
+                                    <div class="vector-image">
+                                        <img src="/images/vector.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="register-form">
+                        <h2>Register</h2>
+
+                        <form asp-controller="Account" asp-action="Register" method="post" enctype="multipart/form-data" role="form">
+                            <div class="form-group">
+                                <label asp-for="Username"></label>
+                                <input asp-for="Username" class="form-control"/>
+                                <span asp-validation-for="Username"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="form-control"/>
+                                <span asp-validation-for="Email"></span>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="form-control"/>
+                                <span asp-validation-for="Password"></span>
+
+                            </div>
+                            <div class="form-group">
+                                <label>Upload Image</label>
+                                <input type="file" asp-for="@Model.File" />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" class="default-btn" value="Register" />
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12 control">
+                                    <div style="border-top:1px solid #888;padding-top:15px;font-size:1.5em">
+                                        if you have an account
+                                        <a asp-controller="Account" asp-action="Login" style="color:blue;">
+                                            Login Here
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-btn-icon">
+            <a href="/Home/Index"><i class="flaticon-home"></i></a>
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>

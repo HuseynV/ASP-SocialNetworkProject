@@ -1,0 +1,22 @@
+﻿@model UsersViewModel
+
+@* <div id="users-data">
+    @foreach (var user in Model.Users)
+    {
+        var style = user.IsOnline ? "border: 5px solid springgreen" : "border: 5px solid red";
+
+        <div class="card" style="@style; width:100px;height:100px;margin:5px;border-radius:50%">
+            <img style="width:100%;height:100%;border-radius:50%;" src="/images/@user.Image" alt="@user.UserName" />
+        </div>
+    } *@
+@* </div> *@
+
+<div id="allUsers2">
+
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js" asp-append-version="true"></script>
+<script src="~/js/user.js" asp-append-version="true"></script>

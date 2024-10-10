@@ -1,0 +1,45 @@
+﻿<div class="content-page-box-area">
+    <div class="page-banner-box bg-4">
+        <h3>Friends</h3>
+    </div>
+
+    <div class="friends-inner-box-style d-flex justify-content-between align-items-center margin-top-25">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                @* <a class="nav-link" id="friend-requests-tab" data-bs-toggle="tab" onclick="GetAllFriends()" role="tab" aria-controls="friend-requests">My Friends</a> *@
+            </li>
+            <li class="nav-item">
+                @* <a class="nav-link" id="people-you-know-tab" data-bs-toggle="tab" onclick="GetAllUsers()" aria-controls="people-you-know">Another People</a> *@
+            </li>
+        </ul>
+
+        <div class="friends-search-box">
+            <form>
+                <input type="text" class="input-search" placeholder="Search friends...">
+                <button type="submit"><i class="ri-search-line"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="friend-requests" role="tabpanel">
+            <div class="justify-content-start" style="width:100%">
+                <div id="allFriends"  style="display:flex;justify-content:start;margin-top:50px;">
+                
+                </div>
+            </div>
+
+            <div class="load-more-posts-btn">
+                <a href="#"><i class="flaticon-loading"></i> Load More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+

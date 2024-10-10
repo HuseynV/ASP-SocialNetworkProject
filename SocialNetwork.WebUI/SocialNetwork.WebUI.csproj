@@ -22,4 +22,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SocialNetwork.Business\SocialNetwork.Business.csproj" />
+    <ProjectReference Include="..\SocialNetwork.DataAccess\SocialNetwork.DataAccess.csproj" />
+    <ProjectReference Include="..\SocialNetwork.Entities\SocialNetwork.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
